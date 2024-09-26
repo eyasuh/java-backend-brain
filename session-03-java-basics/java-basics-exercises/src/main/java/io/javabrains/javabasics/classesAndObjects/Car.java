@@ -8,7 +8,7 @@ public class Car {
         this.make = make;
         this.model = model;
         this.year = year;
-    };
+    }
 
     public String getMake() {
         return make;
