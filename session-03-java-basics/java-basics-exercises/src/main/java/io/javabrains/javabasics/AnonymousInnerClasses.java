@@ -17,6 +17,6 @@ public class AnonymousInnerClasses {
     }
 }
 
-public abstract class Animal2 {
+abstract class Animal2 {
     abstract public void makeSound();
 }
