@@ -1,4 +1,4 @@
-package io.javabrains.javabasics;
+package io.javabrains.javabasics.classesAndObjects;
 
 /*
 1.  Create a class called `Car` with member variables for the make, model, and year of the car.
@@ -21,6 +21,7 @@ Details: 2020 Toyota Camry
 public class ClassesAndObjects {
 
     public static void main(String[] args) {
-
+        Car car = new Car("Toyota", "Camry", 2024);
+        System.out.println(car);
     }
 }
