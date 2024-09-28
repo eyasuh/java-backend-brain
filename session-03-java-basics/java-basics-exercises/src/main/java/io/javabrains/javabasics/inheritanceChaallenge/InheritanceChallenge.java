@@ -1,4 +1,4 @@
-package io.javabrains.javabasics;
+package io.javabrains.javabasics.inheritanceChaallenge;
 
 /*
 
@@ -15,6 +15,14 @@ package io.javabrains.javabasics;
 public class InheritanceChallenge {
 
     public static void main(String[] args) {
+        Animal [] animalsArr = new Animal[4];
+        animalsArr[0] = new Animal("Lion", 12);
+        animalsArr[1] = new Animal("Dog", 5);
+        animalsArr[2] = new Animal("Cat", 3);
+        animalsArr[3] = new Animal("Bird", 1);
 
+        for (Animal animal : animalsArr) {
+            System.out.println(animal.getName() + " " + animal.getAge() + " " + animal.makeSound());
+        }
     }
 }
