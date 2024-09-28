@@ -12,7 +12,7 @@ public class ArrayChallenge {
         int largest = Arrays.stream(numArray).max().getAsInt();
 
         System.out.println(
-                        "Summ = " + sum + "\n" +
+                        "Sum = " + sum + "\n" +
                         "Average = " + average + "\n" +
                         "Largest = " + largest
         );
