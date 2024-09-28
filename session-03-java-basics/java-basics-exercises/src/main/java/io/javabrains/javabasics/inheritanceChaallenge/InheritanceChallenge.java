@@ -17,8 +17,8 @@ public class InheritanceChallenge {
     public static void main(String[] args) {
         Animal [] animalsArr = new Animal[4];
         animalsArr[0] = new Animal("Lion", 12);
-        animalsArr[1] = new Animal("Dog", 5);
-        animalsArr[2] = new Animal("Cat", 3);
+        animalsArr[1] = new Dog("Dog", 5, "Golden Retriever");
+        animalsArr[2] = new Cat("Cat", 3, 9);
         animalsArr[3] = new Animal("Bird", 1);
 
         for (Animal animal : animalsArr) {
