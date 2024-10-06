@@ -3,31 +3,41 @@ package io.javabrains.javacollections;
 // Implement the BankQueue class and methods. Look at the main method
 // for clues on what the methods need to do
 
+import java.util.LinkedList;
+
 class BankQueue {
 
+    LinkedList<String> customers = new LinkedList<>();
+
     public void addCustomer(String customerName) {
-        throw new RuntimeException("Not implemented");
+//        throw new RuntimeException("Not implemented");
+        customers.add(customerName);
+
     }
 
-    //
+
     public String removeNextCustomer() {
-        throw new RuntimeException("Not implemented");
+        return customers.removeFirst();
     }
 
     public int getNumCustomers() {
-        throw new RuntimeException("Not implemented");
+        return customers.size();
     }
 
     public String peekNextCustomer() {
-        throw new RuntimeException("Not implemented");
+        return customers.peekFirst();
     }
 
     public String peekLastCustomer() {
-        throw new RuntimeException("Not implemented");
+        return customers.peekLast();
     }
 
     public void displayCustomers() {
-        throw new RuntimeException("Not implemented");
+        int i = 0;
+        while ( i < customers.size()){
+            System.out.println(customers.get(i));
+            i++;
+        }
     }
 }
 
